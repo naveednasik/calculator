@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MSword</title>
+	<script type="text/javascript">
+		function bold(){
+		var x=document.getElementById('h');
+		x.style.fontWeight="bold";
+		}
+		function italic() {
+		var i=document.getElementById('h');
+		i.style.fontStyle="italic";
+		}
+		function underline() {
+		var u=document.getElementById('h');
+		u.style.textDecoration="underline";
+		}
+		function alignleft(){
+		 var l=document.getElementById('h');
+		 l.style.textAlign="left";
+		}
+		function aligncenter(){
+		 var c=document.getElementById('h');
+		 c.style.textAlign="center";
+		}
+		function alignright(){
+		 var r=document.getElementById('h');
+		 r.style.textAlign="right";
+		}
+		function fontSize() {
+			var div = document.getElementById('h');
+            var currentFont = div.style.fontSize.value;
+            div.style.fontSize = currentFont + "px";
+		}
+	</script>
+	<style>
+		.jh{
+             width:100%;
+             height:630px;
+			}
+	</style>
+</head>
+<body>
+<div class="header">
+<select id="fsty" onclick="fontStyle()">
+<option>Arial</option>
+<option>Calibri(body)</option>
+<option>ALGERIAN</option>
+<option>Arial Black</option>
+<option>Bell MT</option>
+</select>
+<select id="fize" onclick="fontSize()">
+<option>5</option>
+<option>8</option>
+<option>11</option>
+<option>15</option>
+<option>6</option>
+</select>
+	<input type="button" name="textbox" value="B" class="t" onclick="bold()">
+<input type="button" name="Butt" value="I" class="t" onclick="italic()">
+<input type="button" name="Radio" value="U" class="t" onclick="underline()">
+<input type="button" name="check" value="Align left" class="t" onclick="alignleft()">
+<input type="button" name="drop" value="Align center" class="t" onclick=" aligncenter()">
+<input type="button" name="drop" value="Align right" class="t" onclick="alignright()">
+</div>
+
+<textarea class="jh" id="h">
+ 
+</textarea>
+</body>
+</html>
